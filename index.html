@@ -67,6 +67,14 @@ Click me to display Date and Time.</button>
 </script>
 
 </div>
+<script type="text/javascript">
+
+
+$.getJSON("SPL.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
+
+</script>
 <script type="text/javascript">var myList = [
   { "name": "abc", "age": 50 },
   { "age": "25", "hobby": "swimming" },

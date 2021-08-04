@@ -4,8 +4,12 @@
 
 
 <head>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-	<script type="text/javascript"  src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<script type="text/javascript"  src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+
+  <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/"></script>
+bootstrap.min.css
 </head><body>
 
 
@@ -13,29 +17,10 @@
 
 <script type="text/javascript">
 
-var refereeTest [
-{
-      "id": 43794,
-      "fixture_id": 18082095,
-      "localteam_id": 180,
-      "visitorteam_id": 284,
-      "league_id": 513,
-      "season_id": 18260,
-      "localteam_formation": "4-4-1-1",
-      "visitorteam_formation": "4-2-3-1",
-      "localteam_score": null,
-      "visitorteam_score": null,
-      "ht_score": "0-2",
-      "ft_score": "1-2",
-      "referee_id": 14853,
-      "localteam_coach_id": 896466,
-      "visitorteam_coach_id": 2320,
-      "localteam_position": 2,
-      "visitorteam_position": 1,
-      "date_time": "2021-05-24T18:45:00.000000Z",
-      "formatted_date": "24/05/2021",
-      "home_team": {
-        "id": 180,
+
+
+var defaultData = [{
+   "id": 180,
         "ff_team_id": 0,
         "monk_id": 180,
         "country_id": 1161,
@@ -57,188 +42,81 @@ var refereeTest [
         "not_compeating": null,
         "s3_image": null,
         "logo_path": "https://cdn.sportmonks.com/images//soccer/teams/20/180.png",
-        "national_team": 0
-      },
-      "away_team": {
-        "id": 284,
-        "ff_team_id": 0,
-        "monk_id": 284,
-        "country_id": 1161,
-        "stadium_id": 284597,
-        "legacy_monk_id": 694,
-        "team_name": "Dundee",
-        "team_slug": "dundee",
-        "team_nickname": null,
-        "team_website": null,
-        "founded": "1893",
-        "created_at": null,
-        "updated_at": null,
-        "team_bg_hex": null,
-        "team_text_hex": null,
-        "abbrv": "DUD",
-        "team_twitter_url": null,
-        "team_twitter_hash_tag": null,
-        "is_live": "0",
-        "not_compeating": null,
-        "s3_image": null,
-        "logo_path": "https://cdn.sportmonks.com/images//soccer/teams/28/284.png",
-        "national_team": 0
-      },
-      "goals": [
-        {
-          "id": 102343,
-          "fixture_id": 18082095,
-          "team_id": 284,
-          "player_id": 173870,
-          "player_name": "D. Mullen",
-          "player_assist_id": 174151,
-          "player_assist_name": "P. McMullan",
-          "minute": 7,
-          "extra_minute": null,
-          "type": "goal",
-          "player": {
-            "id": 173870,
-            "monk_id": 173870,
-            "ff_id": null,
-            "country_id": 1161,
-            "firstname": "Danny",
-            "firstname_override": null,
-            "surname": "Mullen",
-            "surname_override": null,
-            "fullname": "Danny Mullen",
-            "name_display_pref": "D. Mullen",
-            "person_slug": "danny-mullen",
-            "person_slug_override": null,
-            "dob": "-000001-11-30T00:00:00.000000Z",
-            "pob": "Coatbridge",
-            "job": "P",
-            "team_id": 284,
-            "twitter_handle": null,
-            "twitter_followers": null,
-            "is_live": "1",
-            "created_at": null,
-            "updated_at": null,
-            "s3_image": null,
-            "image_path": "https://cdn.sportmonks.com/images/soccer/players/14/173870.png",
-            "final_slug": "danny-mullen",
-            "known_name": "Danny Mullen",
-            "formatted_dob": "30/11/-0001",
-            "display_age": "2021",
-            "height_in_feet": "0 ft 0 "",
-            "general_position": "A",
-            "team_logo": "https://cdn.sportmonks.com/images//soccer/teams/28/284.png",
-            "player_info": {
-              "id": 25785,
-              "person_id": 173870,
-              "position_id": 4,
-              "height_cm": 0,
-              "weight_kg": 0,
-              "created_at": null,
-              "updated_at": null,
-              "fpl_position_id": null,
-              "fpl_img": null
-            },
-            "country": {
-              "id": 1161,
-              "name": "Scotland",
-              "country_slug": "scotland",
-              "continent": "Europe",
-              "sub_region": "Northern Europe",
-              "world_region": "EMEA",
-              "fifa": "ENG,NIR,SCO,WAL",
-              "iso": "GBR",
-              "longitude": "-2.2125117778778076",
-              "latitude": "54.56088638305664",
-              "flag": "<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="1200" height="600"><clipPath id="a"><path d="M30 15h30v15zv15h-30zh-30v-15zv-15h30z"/></clipPath><path d="M0 0v30h60v-30z" fill="#00247d"/><path d="M0 0l60 30m0-30l-60 30",
-              "created_at": null,
-              "updated_at": null,
-              "covid": null
-            },
-            "player_summary_fantasy_stats": null,
-            "team_contracted_to": {
-              "id": 284,
-              "ff_team_id": 0,
-              "monk_id": 284,
-              "country_id": 1161,
-              "stadium_id": 284597,
-              "legacy_monk_id": 694,
-              "team_name": "Dundee",
-              "team_slug": "dundee",
-              "team_nickname": null,
-              "team_website": null,
-              "founded": "1893",
-              "created_at": null,
-              "updated_at": null,
-              "team_bg_hex": null,
-              "team_text_hex": null,
-              "abbrv": "DUD",
-              "team_twitter_url": null,
-              "team_twitter_hash_tag": null,
-              "is_live": "0",
-              "not_compeating": null,
-              "s3_image": null,
-              "logo_path": "https://cdn.sportmonks.com/images//soccer/teams/28/284.png",
-              "national_team": 0
-            }
-          }
-        }
+        "national_team": 0},
 ];
 
-print(refereeTest);
+var dom = {
+  $data: $('#data'),
+  $table: $('#table'),
+};
 
-console.log(JSON.stringify({ x: 5, y: 6 }));
-// expected output: "{"x":5,"y":6}"
+function json2table(json, $table) {
+  var cols = Object.keys(json[0]);
+
+  var headerRow = '';
+  var bodyRows = '';
+
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  
+  $table.html('<thead><tr></tr></thead><tbody></tbody>');
+
+  cols.map(function(col) {
+    headerRow += '<th>' + capitalizeFirstLetter(col) + '</th>';
+  });
+
+  json.map(function(row) {
+    bodyRows += '<tr>';
+
+    cols.map(function(colName) {
+      bodyRows += '<td>' + row[colName] + '</td>';
+    })
+
+    bodyRows += '</tr>';
+  });
+
+  $table.find('thead tr').append(headerRow);
+  $table.find('tbody').append(bodyRows);
+}
+
+dom.$data.val(JSON.stringify(defaultData));
+json2table(defaultData, dom.$table);
+
+dom.$data.on('input', function() {
+  json2table(JSON.parse(dom.$data.val()), dom.$table);
+});
 
 
 
 </script>
 
-<script type="text/javascript">var myList = [
-  { "name": "abc", "age": 50 },
-  { "age": "25", "hobby": "swimming" },
-  { "name": "xyz", "hobby": "programming" }
-];
 
-// Builds the HTML Table out of myList.
-function buildHtmlTable(selector) {
-  var columns = addAllColumnHeaders(myList, selector);
 
-  for (var i = 0; i < myList.length; i++) {
-    var row$ = $('<tr/>');
-    for (var colIndex = 0; colIndex < columns.length; colIndex++) {
-      var cellValue = myList[i][columns[colIndex]];
-      if (cellValue == null) cellValue = "";
-      row$.append($('<td/>').html(cellValue));
-    }
-    $(selector).append(row$);
-  }
-}
 
-// Adds a header row to the table and returns the set of columns.
-// Need to do union of keys from all records as some records may not contain
-// all records.
-function addAllColumnHeaders(myList, selector) {
-  var columnSet = [];
-  var headerTr$ = $('<tr/>');
+<div class="container">
+  <div class="page-header">
+    <h1>JSON to Table</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="alert alert-info">This function requires jQuery. There is also a <a href="https://codepen.io/travishorn/pen/qXvaKa">dependency-free version</a>.</div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="data">Data</label>
+        <textarea name="data" id="data" rows="20" class="form-control"></textarea>
+      </div><!-- form-group -->
+    </div><!-- /col -->
+    <div class="col-md-6">
+      <table id="table" class="table"></table>
+    </div><!-- col -->
+  </div><!-- /row -->
+</div><!-- container -->
 
-  for (var i = 0; i < myList.length; i++) {
-    var rowHash = myList[i];
-    for (var key in rowHash) {
-      if ($.inArray(key, columnSet) == -1) {
-        columnSet.push(key);
-        headerTr$.append($('<th/>').html(key));
-      }
-    }
-  }
-  $(selector).append(headerTr$);
 
-  return columnSet;
-}</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-<body onLoad="buildHtmlTable('#excelDataTable')">
-  <table id="excelDataTable" border="1">
-  </table>
 </body>
 	
 	

@@ -4,38 +4,11 @@
 
 
 <head>
-	<script type="text/javascript" src="/cardindex/script.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head><body>
 
 
-  <div class="container text-center my-4">
-
-    <p class="font-weight-bold">The data in the table comes from the google spreadsheet</p>
-
-    <a class="btn btn-primary mb-4" href="https://docs.google.com/spreadsheets/d/1t2_HHLkibAybPORmXuDDEFEyetC3p7r1blQRpjzinXg/edit?usp=sharing" role="button" target="_blank">Click to see the source sheet</a>
-
-    <!-- Table  -->
-    <table class="table table bordered table-striped" id="testTable">
-      <!-- Table head -->
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Age</th>
-          <th>E-mail</th>
-        </tr>
-      </thead>
-      <!-- Table head -->
-
-      <!-- Table body -->
-      <tbody id="demo">
-
-      
-      </tbody>
-      <!-- Table body -->
-    </table>
-    <!-- Table  -->
 
 
 <script type="text/javascript">
@@ -50,6 +23,7 @@ $.getJSON("SPL.json", function(json) {
 
 
 </script>
+
 <script type="text/javascript">var myList = [
   { "name": "abc", "age": 50 },
   { "age": "25", "hobby": "swimming" },
